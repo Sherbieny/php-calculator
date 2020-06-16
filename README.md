@@ -19,7 +19,7 @@ Simple calculator that parse strings and perform addition
 * run `php tests.php run` to run all test cases
   * Note: negative numbers throws exception
   * Note: numbers over 1000 are ignored
-  * Note: the string format should be one of the following
+  * Note: the string format should be one of the following (<b>use single quotes</b>)
     * `1,2,5` comma separated numbers
     * `1\n,2,3` comma separated with \n after a number
     * `1,\n2,4` comma separated with \n before a number
