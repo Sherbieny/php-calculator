@@ -2,13 +2,19 @@
 
 foreach ($argv as $i => $arg) {
     if ($arg == "add") {
-        add($argv[$i + 1]);
+        if (isset($argv[$i + 1])) {
+            add($argv[$i + 1]);
+        }
     }
 }
 
 
 function add(string $input)
 {
+    //handle bad cases
+    if (empty($input)) return "";
+    if (!is_string($input)) return "";
+
     //get the delimiters if they exists    
     $delimiters = getDelimiter($input, "//", "\\n");
 
